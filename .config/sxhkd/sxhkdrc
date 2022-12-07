@@ -1,0 +1,11 @@
+super + L 
+ slock
+
+Print
+ flameshot screen
+
+super + Print
+ flameshot gui
+
+super + Escape
+ "$HOME/.local/bin/system_action"
