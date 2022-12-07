@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#signal=$(grep 'wlan0' /proc/net/wireless | cut -d '.' -f1 | awk '{print $3}')
+
+signal=$(nmcli dev wifi | awk 'NR==1{};NR>1{print $8}')
+
+if [[ $signal -gt 1 ]]; then
+  echo "[   $signal% ] "
+else
+  echo "[ 睊 ] "
+fi
+
