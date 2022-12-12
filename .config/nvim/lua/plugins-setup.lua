@@ -31,7 +31,9 @@ return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 
-	use({ "Everblush/everblush.nvim", as = "everblush" }) -- Everblush colorscheme
+	use({ "catppuccin/nvim", as = "catppuccin" })
+
+	--	use({ "Everblush/everblush.nvim", as = "everblush" }) -- Everblush colorscheme
 
 	use("norcalli/nvim-colorizer.lua") -- Show color preview when color code is used
 
