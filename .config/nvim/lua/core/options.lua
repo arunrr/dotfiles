@@ -18,7 +18,7 @@ opt.linebreak = true
 opt.scrolloff = 10
 --opt.cmdHeight = 2
 --opt.showmode = false
-opt.spelllang= "en"
+opt.spelllang = "en"
 opt.smartindent = true
 -- opt.completeopt = {"menuone", "longest", "preview"}
 opt.signcolumn = "yes" -- Always show sign column
@@ -36,21 +36,20 @@ vim.g.netrw_liststyle = 3
 vim.cmd([[au TextYankPost * silent! lua vim.highlight.on_yank()]])
 
 -- Vertically center document on entering insert mode
-vim.cmd(([[autocmd InsertEnter * norm zz]]))
+vim.cmd([[autocmd InsertEnter * norm zz]])
 
 -- Fenced codeblock goodness
 vim.g.markdown_fenced_languages = {
-  "html",
-  "javascript",
-  "javascriptreact",
-  "typescript",
-  "json",
-  "css",
-  "scss",
-  "lua",
-  "vim",
-  "bash",
-  "fish",
-  "ts=typescript"
+	"html",
+	"javascript",
+	"javascriptreact",
+	"typescript",
+	"json",
+	"css",
+	"scss",
+	"lua",
+	"vim",
+	"bash",
+	"fish",
+	"ts=typescript",
 }
-
